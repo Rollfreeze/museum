@@ -308,6 +308,10 @@ header {
     position: relative;
 }
 
+.explore-container > .dark-title {
+    max-width: 660px;
+}
+
 .dark-title-gallery {
     padding-top: 75px;
     color:#FFFFFF;
@@ -638,9 +642,16 @@ header {
     bottom: 0;
 }
 
-.right-col {
+.right-col, .explore-right {
     max-width: 720px;
     position: relative;
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+}
+
+.explore-right {
+    position: absolute;
 }
 
 .explore-image {
@@ -664,12 +675,30 @@ header {
     gap: 0 60px;
 }
 
+.explore-section {
+    margin: 0;
+    padding: 75px 0;
+}
+
+.explore-container {
+    position: relative;
+    /* padding: 75px 0; */
+
+    /* width: 1440px; */
+    height: 715px;
+    /* height: 895px; */
+}
+
 .flex-container-video {
     display: flex;
     gap: 0 115px;
 
     align-items:center;
     justify-content: space-between;
+}
+
+.explore-p {
+    width: 660px;
 }
 
 .explore-p, .video-p {

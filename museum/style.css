@@ -151,7 +151,7 @@ header {
 }
 
 .logo-container-footer {
-    max-width: 195px;
+    max-width: 220px;
     align-items: flex-start;
 }
 
@@ -639,6 +639,7 @@ header {
     height: 620px;
 
     background-image: url("assets/img/png/map.png");
+    background-position: center;
 }
 
 .map-museum {
@@ -1044,6 +1045,7 @@ header {
         width: 700px;
         height: 440px;
         background-image: url("assets/img/png/tickets-pic.png");
+        background-position: center;
     }
 
     .tickets-type {
@@ -1087,6 +1089,34 @@ header {
     .map-container {
         width: 694px;
         height: 454px;
+
+        background-size: cover;
+    }
+
+    .contacts > .tickets-sub-title {
+        width: 185px;
+        /* height: 56px; */
+        font-size: 24px;
+    }
+
+    .contacts-item {
+        font-size: 20px;
+    }
+    
+    .tickets-sub-amount {
+        text-align: left;
+    }
+
+    .explore-p {
+        font-size: 20px;
+    }
+
+    .dark-title + .explore-p {
+        margin-top: 83px;
+    }
+
+    .flex-footer {
+        gap: 0 45px;
     }
 }
 

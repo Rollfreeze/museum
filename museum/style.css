@@ -916,8 +916,82 @@ header {
     background-position: center;
 }
 
+.span-end:nth-child(2) {
+    text-decoration: line-through;
+    text-decoration-color: #666666;
+}
+
+#burger-btn {
+    display: none;
+}
 
 @media (max-width: 1024px) {
+     /* BUGRGER MENU! */
+
+    #burger-btn {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        width: 31px;
+        height: 31px;
+    }
+    
+    .header > .center-container {
+        height: 740px;
+    }
+
+    .header > .center-container {
+        position: relative;
+    }
+    
+    .intro-title {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 48px;
+    }
+
+    .header-container, .logo-container, .nav-links {
+        display: block;
+    }
+
+    .nav-links-item {
+        margin-bottom: 25px;
+        font-size: 20px;
+
+        position: relative;
+    }
+
+    .nav-links-item::after {
+        content: "";
+        position: absolute;
+
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+
+        height: 8px;
+        width: 8px;
+        
+        left: 100px;
+        top: 10px;
+
+        transform: rotateZ(223deg);
+    }
+
+    .logo-container {
+        position: relative;
+    }
+
+    
+
+    /* ====================== */
+
     .center-container {
         max-width: 984px;
         margin: 0 auto;
@@ -947,9 +1021,6 @@ header {
         bottom: 0;
     }
 
-}
-
-@media (max-width: 1024px) {
     .welcome {
         font-size: 50px;
 
@@ -978,6 +1049,10 @@ header {
     .intro-container {
         height: 585px;
         margin-top: 16px;
+        position: absolute;
+        right: 0px;
+        top: 130px;
+        z-index: 10;
     }
 
     .title {

@@ -19,10 +19,21 @@ function topFunction() {
 }
 
 function burgerShow() {
-    if (document.getElementsByClassName("header-nav")[0].style.display === 'flex') {
-        document.getElementsByClassName("header-nav")[0].style.display = 'none';
+    // if (document.getElementById("header-nav").style.display === 'flex') {
+    //     document.getElementById("header-nav").style.display = 'none';
+    //     document.getElementById("intro-title").style.display = 'block';
+    // }
+    // else {
+    //     document.getElementById("header-nav").style.display = 'flex';
+    //     document.getElementById("intro-title").style.display = 'none';
+    // }
+
+    if (document.getElementById("header-nav").style.display === 'none') {
+        document.getElementById("header-nav").style.display = 'flex';
+        document.getElementById("intro-title").style.display = 'none';
     }
     else {
-        document.getElementsByClassName("header-nav")[0].style.display = 'flex'
+        document.getElementById("header-nav").style.display = 'none';
+        document.getElementById("intro-title").style.display = 'block';
     }
 }

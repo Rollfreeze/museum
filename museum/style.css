@@ -916,10 +916,10 @@ header {
     background-position: center;
 }
 
-.span-end:nth-child(2) {
+/* .span-end:nth-child(2) {
     text-decoration: line-through;
     text-decoration-color: #666666;
-}
+} */
 
 #burger-btn {
     display: none;
@@ -928,6 +928,13 @@ header {
 @media (max-width: 1024px) {
      /* BUGRGER MENU! */
 
+    .intro-title {
+        position: absolute;
+
+        /* left: 0px;
+        top: 0px; */
+    }
+    
     #burger-btn {
         display: block;
         position: absolute;
@@ -936,6 +943,11 @@ header {
 
         width: 31px;
         height: 31px;
+
+        border: none;
+        color: white;
+        font-size: 28px;
+        background-color: #030303;
     }
     
     .header > .center-container {
@@ -1034,6 +1046,8 @@ header {
 
     .intro-title {
         top: 50px;
+
+        left: -985px;
     }
 
     .mona-btn {
@@ -1196,7 +1210,41 @@ header {
 }
 
 @media (max-width: 768px) {
-    
+    .header-container {
+        padding-top: 35px;
+        padding-bottom: 34px;
+    }
+
+    .center-container {
+        max-width: 728px;
+        margin: 0 auto;
+    }
+
+    .mona-btn {
+        display: none;
+    }
+
+    .intro-container {
+        position: static;
+        width: 768px;
+        height: 861px;
+    }
+
+    .intro-title {
+        position: static;
+    }
+
+    .mona-liza {
+        position: static;
+    }
+
+    .welcome-slider {
+        position: static;
+    }
+
+    .slider-center-container {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 420px) {

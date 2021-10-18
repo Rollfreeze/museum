@@ -1794,12 +1794,17 @@ header {
         background-image: url("assets/img/png/map-420.png");
     }
 
+    .span-end {
+        font-size: 16px;
+    }
+
     .span-end:nth-child(2) {
         display: none;
     }
 
     .flex-footer {
         display: block;
+        padding-bottom: 110px;
     }
 
     .nav-links-footer {
@@ -1834,15 +1839,23 @@ header {
     }
 
     .footer-nav-adaptive:first-child {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        /* margin-top: 40px; */
+        /* margin-bottom: 30px; */
     }
 
     .footer-nav-adaptive:last-child {
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
     }
 
     .footer-nav-items-420px {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-nav-adaptive {
+        flex-direction: column;
+        gap: 30px 0;
     }
 }

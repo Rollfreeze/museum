@@ -49,13 +49,43 @@ function burgerShow() {
 
         document.getElementById("mona-liza").style.display = 'none';
     }
+}
 
-    // if (document.getElementById("header-nav").style.display === 'none') {
-    //     document.getElementById("header-nav").style.display = 'flex';
-    //     document.getElementById("intro-title").style.display = 'none';
-    // }
-    // else {
-    //     document.getElementById("header-nav").style.display = 'none';
-    //     document.getElementById("intro-title").style.display = 'block';
-    // }
+function burgerShow2() {
+    if (document.getElementById("header-nav").style.display === 'flex') {
+        document.getElementById("header-nav").style.display = 'none';
+        document.getElementById("intro-title").style.display = 'block';
+
+        // adaptive
+        document.getElementById("adaptive-420-container").style.display = 'none';
+
+        document.getElementById("intro").style.display = 'block';
+
+        document.getElementById("adaptive-420-1").style.display = 'none';
+        document.getElementById("adaptive-420-2").style.display = 'none';
+        document.getElementById("adaptive-420-3").style.display = 'none';
+
+        document.getElementById("mona-liza").style.display = 'block';
+        document.getElementById("welcome-slider").style.display = 'block';
+        document.getElementById("adaptive-420-line").style.display = 'none';
+        document.getElementById("media-links").style.display = 'none';
+
+    }
+    else {
+        document.getElementById("header-nav").style.display = 'flex';
+        document.getElementById("intro-title").style.display = 'none';
+
+        // adaptive
+        document.getElementById("adaptive-420-container").style.display = 'flex';
+        document.getElementById("intro").style.display = 'none';
+        document.getElementById("adaptive-420-1").style.display = 'block';
+        document.getElementById("adaptive-420-2").style.display = 'block';
+        document.getElementById("adaptive-420-3").style.display = 'block';
+        document.getElementById("mona-liza").style.display = 'none';
+        document.getElementById("welcome-slider").style.display = 'none';
+        document.getElementById("adaptive-420-line").style.display = 'block';
+
+        document.getElementById("media-links").style.display = 'flex';
+
+    }
 }

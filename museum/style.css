@@ -940,6 +940,10 @@ header {
     display: none;
 }
 
+.footer-nav-items-420px {
+    display: none;
+}
+
 @media (max-width: 1024px) {
      /* BUGRGER MENU! */
 
@@ -1665,6 +1669,10 @@ header {
         bottom: 38px;
     }
 
+    .media-links {
+        max-width: 270px;
+    }
+
     .light-title {
         line-height: 40px;
         letter-spacing: 5px;
@@ -1742,5 +1750,99 @@ header {
 
     .dark-title-gallery {
         padding-top: 40px;
+    }
+
+    .tickets-flex {
+        display: block;
+    }
+
+    .ticket-img-container {
+        width: 380px;
+        height: 160px;
+
+        background-image: url("assets/img/png/tickets-img.png");
+
+    }
+
+    .buy-container {
+        margin: 0 auto;
+    }
+
+    .tickets-sub-amount {
+        text-align: center;
+        font-size: 24px;
+        line-height: 19px;
+
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .buy-btn, .buy-btn:active, .buy-btn:hover {
+        outline: none;
+        border: none;
+    }
+
+    .panoram-picture {
+        width: 420px;
+        height: 300px;
+    }
+    
+    .map-container {
+        width: 380px;
+        height: 248px;
+
+        background-image: url("assets/img/png/map-420.png");
+    }
+
+    .span-end:nth-child(2) {
+        display: none;
+    }
+
+    .flex-footer {
+        display: block;
+    }
+
+    .nav-links-footer {
+        display: none;
+        max-width: 380px;
+    }
+
+    /* .nav-links-item-footer {
+        display: inline;
+        font-size: 16px;
+
+        margin-right: 55px;
+    } */
+
+    .footer-nav-adaptive {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-nav-adaptive > a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 19px;
+
+        letter-spacing: 2px;
+
+        color: #FFFFFF;
+
+        text-decoration: none;
+    }
+
+    .footer-nav-adaptive:first-child {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .footer-nav-adaptive:last-child {
+        margin-bottom: 40px;
+    }
+
+    .footer-nav-items-420px {
+        display: block;
     }
 }

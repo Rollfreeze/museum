@@ -19,21 +19,21 @@ function topFunction() {
 }
 
 function burgerShow() {
-    // if (document.getElementById("header-nav").style.display === 'flex') {
-    //     document.getElementById("header-nav").style.display = 'none';
-    //     document.getElementById("intro-title").style.display = 'block';
-    // }
-    // else {
-    //     document.getElementById("header-nav").style.display = 'flex';
-    //     document.getElementById("intro-title").style.display = 'none';
-    // }
-
-    if (document.getElementById("header-nav").style.display === 'none') {
-        document.getElementById("header-nav").style.display = 'flex';
-        document.getElementById("intro-title").style.display = 'none';
-    }
-    else {
+    if (document.getElementById("header-nav").style.display === 'flex') {
         document.getElementById("header-nav").style.display = 'none';
         document.getElementById("intro-title").style.display = 'block';
     }
+    else {
+        document.getElementById("header-nav").style.display = 'flex';
+        document.getElementById("intro-title").style.display = 'none';
+    }
+
+    // if (document.getElementById("header-nav").style.display === 'none') {
+    //     document.getElementById("header-nav").style.display = 'flex';
+    //     document.getElementById("intro-title").style.display = 'none';
+    // }
+    // else {
+    //     document.getElementById("header-nav").style.display = 'none';
+    //     document.getElementById("intro-title").style.display = 'block';
+    // }
 }

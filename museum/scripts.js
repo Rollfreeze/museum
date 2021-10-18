@@ -22,10 +22,32 @@ function burgerShow() {
     if (document.getElementById("header-nav").style.display === 'flex') {
         document.getElementById("header-nav").style.display = 'none';
         document.getElementById("intro-title").style.display = 'block';
+
+        // adaptive
+        document.getElementById("adaptive-720-container").style.display = 'none';
+
+        document.getElementById("adaptive-720-1").style.display = 'none';
+
+        document.getElementById("low-flex").style.display = 'none';
+        document.getElementById("adaptive-720-2-1").style.display = 'none';
+        document.getElementById("adaptive-720-2-2").style.display = 'none';
+
+        document.getElementById("mona-liza").style.display = 'block';
     }
     else {
         document.getElementById("header-nav").style.display = 'flex';
         document.getElementById("intro-title").style.display = 'none';
+
+        // adaptive
+        document.getElementById("adaptive-720-container").style.display = 'block';
+
+        document.getElementById("adaptive-720-1").style.display = 'block';
+
+        document.getElementById("low-flex").style.display = 'flex';
+        document.getElementById("adaptive-720-2-1").style.display = 'block';
+        document.getElementById("adaptive-720-2-2").style.display = 'block';
+
+        document.getElementById("mona-liza").style.display = 'none';
     }
 
     // if (document.getElementById("header-nav").style.display === 'none') {

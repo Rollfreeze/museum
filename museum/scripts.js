@@ -51,6 +51,58 @@ function burgerShow() {
     }
 }
 
+function burgerShow1024() {
+    if (document.getElementById("header-nav").style.display === 'flex') {
+        document.getElementById("header-nav").style.display = 'none';
+        document.getElementById("intro-title").style.display = 'block';
+    }
+    else {
+        document.getElementById("header-nav").style.display = 'flex';
+        document.getElementById("intro-title").style.display = 'none';
+    }
+}
+
+function burgerShow768() {
+    if (document.getElementById("header-nav").style.display === 'flex') {
+        document.getElementById("header-nav").style.display = 'none';
+        document.getElementById("intro-title").style.display = 'block';
+
+        document.getElementById("adaptive-720-container").style.display = 'none';
+        document.getElementById("adaptive-720-1").style.display = 'none';
+
+        document.getElementById("low-flex").style.display = 'none';
+        document.getElementById("adaptive-720-2-1").style.display = 'none';
+        document.getElementById("adaptive-720-2-2").style.display = 'none';
+
+        document.getElementById("mona-liza").style.display = 'block';
+
+        document.getElementById("welcome-slider").style.display = 'block';
+
+        document.getElementById("line-768-burgerMenuOpen").style.display = 'none';
+        
+        document.getElementById("media-links-768").style.display = 'none';
+    }
+    else {
+        document.getElementById("header-nav").style.display = 'flex';
+        document.getElementById("intro-title").style.display = 'none';
+
+        document.getElementById("adaptive-720-container").style.display = 'block';
+        document.getElementById("adaptive-720-1").style.display = 'block';
+
+        document.getElementById("low-flex").style.display = 'flex';
+        document.getElementById("adaptive-720-2-1").style.display = 'block';
+        document.getElementById("adaptive-720-2-2").style.display = 'block';
+
+        document.getElementById("mona-liza").style.display = 'none';
+
+        document.getElementById("welcome-slider").style.display = 'none';
+
+        document.getElementById("line-768-burgerMenuOpen").style.display = 'block';
+
+        document.getElementById("media-links-768").style.display = 'flex';
+    }
+}
+
 function burgerShow2() {
     if (document.getElementById("header-nav").style.display === 'flex') {
         document.getElementById("header-nav").style.display = 'none';
